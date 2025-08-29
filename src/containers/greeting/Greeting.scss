@@ -1,0 +1,180 @@
+@import "../../_globalColor";
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+/* Parent flex container */
+.greeting-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Left text section */
+.greeting-text-div {
+  flex: 0 0 60%; /* ~60% width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right image section */
+.greeting-image-div {
+  flex: 0 0 40%; /* ~40% width */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.greeting-image-div img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+  z-index: 2;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.empty-div {
+  margin-bottom: 40px;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.download-link-button {
+  text-decoration: none;
+  
+}
+
+.greeting-text {
+  font-size: 70px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(12deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(9deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Responsive Queries */
+@media (max-width: 1380px) {
+  .greeting-text { font-size: 50px; }
+  .greeting-text-p { font-size: 20px; }
+  .greeting-image-div { max-width: 280px; }
+}
+
+@media (max-width: 768px) {
+  .greeting-main {
+    flex-direction: row; /* stack */
+    align-items: center;
+    text-align: justify;
+  }
+
+  .greeting-text-div {
+    flex: 0 0 55%; /* full width on mobile */
+  }
+   .greeting-image-div{
+    flex: 0 0 45%; /* ~45% width */
+   }
+
+  .greeting-image-div {
+    order: 2;
+    max-width: 220px;
+    margin-top: 20px;
+  }
+
+  .greeting-text-div {
+    padding: 0 15px; /* add side gap */
+    order: 1;
+  }
+
+  .button-greeting-div { justify-content: space-around; }
+  .greeting-text { font-size: 30px; }
+  .greeting-text-p { font-size: 16px; line-height: normal; }
+}
+/* On small screens (phones < 600px): stack vertically */
+
+@media (max-width: 600px) {
+  .greeting-main {
+    flex-direction: column; /* stack */
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    
+  }
+
+  .greeting-text-div,
+  .greeting-image-div {
+    flex: 0 0 100%;
+  }
+
+  .greeting-image-div {
+    order: 2;
+    max-width: 220px;
+    margin-top: 20px;
+  }
+
+  .greeting-text-div {
+    padding: 0 15px; /* gap from screen edge */
+    order: 1;
+  }
+
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+
+  .greeting-text {
+    font-size: 30px;
+  }
+
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+@media (max-width: 320px) {
+  .main { width: auto; }
+}
