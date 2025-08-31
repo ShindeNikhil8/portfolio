@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cdea1a0b.css",
+    "main.js": "/portfolio/static/js/main.85089f43.js",
+    "static/css/64.bba8fa55.chunk.css": "/portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.2caae6e2.chunk.js": "/portfolio/static/js/64.2caae6e2.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.3dc3d49a.chunk.js": "/portfolio/static/js/769.3dc3d49a.chunk.js",
+    "static/media/dnyantirth.jpg": "/portfolio/static/media/dnyantirth.26a7c97de585bc258011.jpg",
+    "static/media/self.png": "/portfolio/static/media/self.5cf3ab0cd8f58a4d50f9.png",
+    "static/media/pccoe_logo.png": "/portfolio/static/media/pccoe_logo.c3d961ff8a94e5aea993.png",
+    "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/trophy.jpg": "/portfolio/static/media/trophy.a278b51fd0bef6cc8780.jpg",
+    "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/translate.webp": "/portfolio/static/media/translate.ea291cf92f34b1d4859d.webp",
+    "static/media/whiteboard.jpg": "/portfolio/static/media/whiteboard.0bb917eac171403a9be7.jpg",
+    "static/media/logo.png": "/portfolio/static/media/logo.e5e2c50f385c0cb32895.png",
+    "static/media/css.png": "/portfolio/static/media/css.8df180f49af896668724.png",
+    "static/media/tictactoe.jpg": "/portfolio/static/media/tictactoe.5af3a1133b8b7eca1e05.jpg",
+    "static/media/cLogo.jpg": "/portfolio/static/media/cLogo.306a333203df0c4ee258.jpg",
+    "static/media/contactMailDark.svg": "/portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/password.png": "/portfolio/static/media/password.27bbf06b624da3f2f8ad.png",
+    "static/media/sql.png": "/portfolio/static/media/sql.c5bede0098e3bf3a222e.png",
+    "static/media/Postman-Logo.jpg": "/portfolio/static/media/Postman-Logo.18a3ea719acb39bf764b.jpg",
+    "static/media/auxilium.webp": "/portfolio/static/media/auxilium.c59a4c11f7b7dcb10041.webp",
+    "static/media/Udemy-Emblem.png": "/portfolio/static/media/Udemy-Emblem.9cda974df3fe03bf2b42.png",
+    "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/portfolio/index.html",
+    "main.cdea1a0b.css.map": "/portfolio/static/css/main.cdea1a0b.css.map",
+    "main.85089f43.js.map": "/portfolio/static/js/main.85089f43.js.map",
+    "64.bba8fa55.chunk.css.map": "/portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.2caae6e2.chunk.js.map": "/portfolio/static/js/64.2caae6e2.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.3dc3d49a.chunk.js.map": "/portfolio/static/js/769.3dc3d49a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdea1a0b.css",
+    "static/js/main.85089f43.js"
+  ]
+}
