@@ -1,9 +1,10 @@
 @import "../../_globalColor";
 
-.card-image {
+.card-image2 {
   max-width: 100%;
-  height: auto;
+  height: 200px;
   width: 250px;
+  border: 10px solid $lightBorder1;
 }
 .card-title {
   color: $titleColor;
@@ -26,6 +27,7 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 550px;
 }
 .certificate-detail-div {
   text-align: center;

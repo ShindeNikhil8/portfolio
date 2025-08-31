@@ -6,11 +6,11 @@ import {formatFileSizeDisplay} from "../../utils";
 export default function GithubRepoCard({repo, isDark}) {
   function openUrlInNewTab(url, name) {
     if (!url) {
-      console.log(`URL in ${name} is undefined`);
+      console.error(`❌ URL for ${name} is undefined`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    const win = window.open(url, "_blank", "noopener,noreferrer");
+    if (win) win.focus();
   }
 
   return (

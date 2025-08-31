@@ -22,16 +22,25 @@
   text-align: center;
 }
 
-/* Horizontal Scrolling Container */
-.achievement-cards-div {
-  display: flex;
-  gap: 2rem;
-  overflow-x: hidden;
-  padding-bottom: 1rem;
-  align-items: stretch; /* ensures all cards same height */
+/* Carousel wrapper */
+.carousel-wrapper2 {
+  overflow: hidden;
+  width: 100%;
 }
 
-/* Card wrapper */
+/* Carousel track (scrolling row of cards) */
+.carousel-track2 {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: slide2 40s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* Achievement cards */
 .achievement-card-wrapper {
   flex: 0 0 auto;
   display: flex;
@@ -39,6 +48,7 @@
   border-radius: 8px;
   transition: background-color 0.3s;
   cursor: pointer;
+  width: 300px;
 }
 
 .achievement-card-wrapper:hover {
@@ -53,7 +63,7 @@
   .achievement-subtitle {
     font-size: 18px;
   }
-  .achievement-cards-div {
+  .carousel-track {
     gap: 1rem;
   }
 }
@@ -64,5 +74,16 @@
   }
   .achievement-subtitle {
     font-size: 14px;
+  }
+}
+
+/* Animation */
+@keyframes slide2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%); 
+    /* exactly half (the duplicated set) */
   }
 }

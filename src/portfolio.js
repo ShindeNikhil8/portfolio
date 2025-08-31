@@ -229,35 +229,53 @@ const openSource = {
 
 // Some big projects you have worked on
 
+
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME STARTUPS AND PROJECTS I BUILT OR CONTRIBUTED TO",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/tictactoe.jpg"),
+      projectName: "Tic Tac Toe Game",
+      projectDesc: "A multiplayer Tic Tac Toe game website where users can play against each other online.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+        { name: "GitHub Repo", url: "https://github.com/ShindeNikhil8/Tic-Tac-Toe_game_website.github.io" }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/password.png"),
+      projectName: "Password Generator",
+      projectDesc: "Generate strong and customizable passwords with visual strength indicators and copy-to-clipboard functionality.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+        { name: "GitHub Repo", url: "https://github.com/ShindeNikhil8/Password_Generator.github.io/" }
+      ]
+    },
+    {
+      image: require("./assets/images/weather.jpeg"),
+      projectName: "Weather App",
+      projectDesc: "A responsive weather application that fetches live data from OpenWeatherMap API and displays current weather for any location.",
+      footerLink: [
+        { name: "GitHub Repo", url: "https://github.com/ShindeNikhil8/Weather_App/" }
+      ]
+    },
+    {
+      image: require("./assets/images/translate.webp"),
+      projectName: "Translate App",
+      projectDesc: "A MERN stack text translation tool allowing users to translate text between multiple languages with a simple interface.",
+      footerLink: [
+        { name: "GitHub Repo", url: "https://github.com/ShindeNikhil8/translate_app" }
+      ]
+    },
+    {
+      image: require("./assets/images/whiteboard.jpg"),
+      projectName: "CoSketch - Collaborative Whiteboard",
+      projectDesc: "A real-time collaborative whiteboard built with React, Socket.io, and MongoDB for drawing and team collaboration online.",
+      footerLink: [
+        { name: "GitHub Repo", url: "https://github.com/ShindeNikhil8/collaborative_whiteboard" }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -270,56 +288,136 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Postman API Fundamentals – Student Expert",
-      subtitle: "Earned Student Expert certification by mastering Postman API testing and collaboration tools.",
-      image: require("./assets/images/Postman-Logo.jpg"),
-      imageAlt: "Postman Logo",
-      footerLink: [
-        {
-          name: "View Certificate",
-          badge:"./assets/images/postman_badge.png", // replace with your badge image
-          url: "https://drive.google.com/file/d/13fgGci-32KNl7Z-L1xGrK8ymy6MdouII/view?usp=sharing" // replace with your certificate link
-        }
-      ]
-    },
-    {
-      title: "Java (Basic) – HackerRank",
-      subtitle: "Successfully cleared the HackerRank Java Basic Skills Certification Test.",
-      image: require("./assets/images/javalogo.png"),
-      imageAlt: "Java Logo",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://drive.google.com/file/d/1BKC8MOTdGHDKCkESxKgwLrTZH-_FEXl5/view?usp=sharing"
-        }
-      ]
-    },
-    {
       title: "C Programming Course Certificate",
-      subtitle: "Earned certification in C Programming, focusing on data structures, problem solving, and algorithms.",
+      subtitle:
+        "Earned certification in C Programming, focusing on data structures, problem solving, and algorithms.",
       image: require("./assets/images/cLogo.jpg"),
       imageAlt: "C Language Logo",
       footerLink: [
         {
           name: "View Certificate",
-          url: "https://drive.google.com/file/d/1DwT_m_xl6xJB4tfagOQZC9bWDDAiATZB/view?usp=sharing"
-        }
-      ]
+          url: "https://drive.google.com/file/d/1DwT_m_xl6xJB4tfagOQZC9bWDDAiATZB/view?usp=sharing",
+        },
+      ],
+    },
+    {
+      title: "C++ and Java Training – Crash Course",
+      subtitle:
+        "Completed beginner training crash course in C++ and Java programming.",
+      image: require("./assets/images/Udemy-Emblem.png"),
+      imageAlt: "C++ and Java Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1_aAH3-mUrXbBE3neZZyF9wGHItko6_95/view?usp=sharing",
+        },
+      ],
+    },
+    {
+      title: "SQL (Basic) – HackerRank",
+      subtitle: "Certified in SQL basics including queries, filtering, and joins.",
+      image: require("./assets/images/sql.png"),
+      imageAlt: "SQL Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.hackerrank.com/certificates/iframe/0e397a29cf8f",
+        },
+      ],
+    },
+    {
+      title: "SQL (Intermediate) – HackerRank",
+      subtitle: "Cleared HackerRank SQL Intermediate test covering advanced queries.",
+      image: require("./assets/images/sql.png"),
+      imageAlt: "SQL Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.hackerrank.com/certificates/iframe/bc023d9b4173",
+        },
+      ],
     },
     {
       title: "Extra-Curricular Achievements",
-      subtitle: "Participated and excelled in various non-technical events and competitions.",
+      subtitle:
+        "Participated and excelled in various non-technical events and competitions.",
       image: require("./assets/images/trophy.jpg"),
       imageAlt: "Trophy Icon",
       footerLink: [
         { name: "Virtual Treasure Hunt", url: "" },
         { name: "2nd Prize – Live Painting Competition", url: "" },
-        { name: "Hobby Exhibition", url: "" }
-      ]
+        { name: "Hobby Exhibition", url: "" },
+      ],
+    },
+    {
+      title: "Java (Basic) – HackerRank",
+      subtitle:
+        "Successfully cleared the HackerRank Java Basic Skills Certification Test.",
+      image: require("./assets/images/javalogo.png"),
+      imageAlt: "Java Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1BKC8MOTdGHDKCkESxKgwLrTZH-_FEXl5/view?usp=sharing",
+        },
+      ],
+    },
+    {
+      title: "CSS (Basic) – HackerRank",
+      subtitle: "Certified for foundational knowledge of CSS styling and layout.",
+      image: require("./assets/images/css.png"),
+      imageAlt: "CSS Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.hackerrank.com/certificates/iframe/84b82954daa2",
+        },
+      ],
+    },
+    {
+      title: "Frontend Web Development – React & JavaScript",
+      subtitle:
+        "Certification in frontend development focusing on React.js and JavaScript.",
+      image: require("./assets/images/web.jpeg"),
+      imageAlt: "React Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1WfwUouZBNOBRjnr2JJS2EhXo9lVn6zLt/view?usp=sharing",
+        },
+      ],
+    },
+    {
+      title: "Backend Web Development – Express & Node.js",
+      subtitle:
+        "Certification in backend web development using Node.js and Express.js.",
+      image: require("./assets/images/web.jpeg"),
+      imageAlt: "Node.js Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1Wg0iZPPj_HCaCAABdb16-tgWQyMCMucC/view?usp=sharing",
+        },
+      ],
+    },
+    {
+      title: "Postman API Fundamentals – Student Expert",
+      subtitle:
+        "Earned Student Expert certification by mastering Postman API testing and collaboration tools.",
+      image: require("./assets/images/Postman-Logo.jpg"),
+      imageAlt: "Postman Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          badge: "./assets/images/postman_badge.png",
+          url: "https://drive.google.com/file/d/13fgGci-32KNl7Z-L1xGrK8ymy6MdouII/view?usp=sharing",
+        },
+      ],
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
+
 
 
 // Blogs Section
